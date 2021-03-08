@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wrxml>
+    <properties platform="VxWorks" platform_name="vxworks-6.9" root="1" type="DownloadableKernelModuleProject"/>
+    <attributes>
+        <mapAttribute>
+            <listAttribute key="BLD::Info|Definess|PPC32diab_SMP">
+                <stringAttribute value="-DCPU=_VX_$(CPU)"/>
+                <stringAttribute value="-DTOOL_FAMILY=$(TOOL_FAMILY)"/>
+                <stringAttribute value="-DTOOL=$(TOOL)"/>
+                <stringAttribute value="-D_WRS_KERNEL"/>
+                <stringAttribute value="-D_WRS_VX_SMP"/>
+                <stringAttribute value="-D_WRS_CONFIG_SMP"/>
+                <stringAttribute value="-D_VSB_CONFIG_FILE=\&quot;$(VSB_DIR)/h/config/vsbConfig.h\&quot;"/>
+                <stringAttribute value=" "/>
+                <stringAttribute value="-DIP_PORT_VXWORKS=69"/>
+            </listAttribute>
+            <listAttribute key="BLD::Info|GlobalMacros">
+                <stringAttribute value="PROJECT_TYPE"/>
+                <stringAttribute value="DEFINES"/>
+                <stringAttribute value="EXPAND_DBG"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|GlobalMacro|DEFINES" value=""/>
+            <stringAttribute key="BLD::Info|GlobalMacro|EXPAND_DBG" value="0"/>
+            <stringAttribute key="BLD::Info|GlobalMacro|PROJECT_TYPE" value="DKM"/>
+            <listAttribute key="BLD::Info|Incl|PPC32diab_SMP">
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+            </listAttribute>
+            <listAttribute key="BLD::Info|Macros">
+                <stringAttribute value="VX_CPU_FAMILY"/>
+                <stringAttribute value="CPU"/>
+                <stringAttribute value="TOOL_FAMILY"/>
+                <stringAttribute value="TOOL"/>
+                <stringAttribute value="TOOL_PATH"/>
+                <stringAttribute value="CC_ARCH_SPEC"/>
+                <stringAttribute value="VSB_DIR"/>
+                <stringAttribute value="VSB_CONFIG_FILE"/>
+                <stringAttribute value="LIBPATH"/>
+                <stringAttribute value="LIBS"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|Macro|CC_ARCH_SPEC|value|PPC32diab_SMP" value="-tPPCFH:vxworks69 -Xstmw-slow -DPPC32_fp60x -Xstsw-slow"/>
+            <stringAttribute key="BLD::Info|Macro|CPU|value|PPC32diab_SMP" value="PPC32"/>
+            <stringAttribute key="BLD::Info|Macro|LIBPATH|value|PPC32diab_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|LIBS|value|PPC32diab_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_FAMILY|value|PPC32diab_SMP" value="diab"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_PATH|value|PPC32diab_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|TOOL|value|PPC32diab_SMP" value="diab"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_CONFIG_FILE|value|PPC32diab_SMP" value="$(VSB_DIR)/h/config/vsbConfig.h"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_DIR|value|PPC32diab_SMP" value="$(WIND_BASE)/target/lib_smp"/>
+            <stringAttribute key="BLD::Info|Macro|VX_CPU_FAMILY|value|PPC32diab_SMP" value="ppc"/>
+            <listAttribute key="BLD::Info|Tools">
+                <stringAttribute value="C-Compiler"/>
+                <stringAttribute value="C++-Compiler"/>
+                <stringAttribute value="Linker"/>
+                <stringAttribute value="Partial Image Linker"/>
+                <stringAttribute value="Librarian"/>
+                <stringAttribute value="Assembler"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|Tool|Assembler|cmd|PPC32diab_SMP" value="echo &quot;building $@&quot;;%assemblerprefix% $(TOOL_PATH)dcc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile%"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|dbgFlags|PPC32diab_SMP" value="-g"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|derivedSigs|PPC32diab_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|flags|PPC32diab_SMP" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only  -W:c++:.CPP -Xc-new -Xdialect-c89  -Xpreprocess-assembly -Xcpp-no-space   -Xmake-dependency=0xd"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|nonDbgFlags|PPC32diab_SMP" value=" -XO -Xsize-opt "/>
+            <booleanAttribute key="BLD::Info|Tool|Assembler|object" value="true"/>
+            <booleanAttribute key="BLD::Info|Tool|Assembler|passAble" value="false"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|sigs" value="*.s"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|cmd|PPC32diab_SMP" value="echo &quot;building $@&quot;;%cppcompilerprefix% $(TOOL_PATH)dcc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_C++FLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile%"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|dbgFlags|PPC32diab_SMP" value="-g"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|derivedSigs|PPC32diab_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|PPC32diab_SMP" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only  -W:c++:.CPP -ei1518,4177,4223,4301,4550,5409,1606 -ei4193,4826,4381,4237,1573,4007,4082,4177,4223,4260,4550,5361,5828,2273,5387,5388 -ei1522,4092,4111,4152,4167,4171,4174,4186,4188,4191,4192,4223,4231,4236,4284,4375,4494,4513,5152,5457 -Xforce-declarations   -Xmake-dependency=0xd"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|nonDbgFlags|PPC32diab_SMP" value=" -XO -Xsize-opt "/>
+            <booleanAttribute key="BLD::Info|Tool|C++-Compiler|object" value="true"/>
+            <booleanAttribute key="BLD::Info|Tool|C++-Compiler|passAble" value="false"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|sigs" value="*.cpp;*.CPP;*.C;*.cxx;*.cc"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|cmd|PPC32diab_SMP" value="echo &quot;building $@&quot;;%ccompilerprefix% $(TOOL_PATH)dcc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile%"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|PPC32diab_SMP" value="-g"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|derivedSigs|PPC32diab_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC32diab_SMP" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only  -W:c++:.CPP -Xc-new -Xdialect-c89  -ei1518,4177,4223,4301,4550,5409,1606 -ei4193,4826,4381,4237,1573,4007,4082,4177,4223,4260,4550,5361,5828,2273,5387,5388 -ei1522,4092,4111,4152,4167,4171,4174,4186,4188,4191,4192,4223,4231,4236,4284,4375,4494,4513,5152,5457 -Xforce-declarations   -Xmake-dependency=0xd"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|nonDbgFlags|PPC32diab_SMP" value=" -XO -Xsize-opt "/>
+            <booleanAttribute key="BLD::Info|Tool|C-Compiler|object" value="true"/>
+            <booleanAttribute key="BLD::Info|Tool|C-Compiler|passAble" value="false"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|sigs" value="*.c"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|cmd|PPC32diab_SMP" value="echo &quot;building $@&quot;;%archiverprefix% $(TOOL_PATH)dar %ToolFlags% %OutFile% %Objects% $(ADDED_OBJECTS)"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|dbgFlags|PPC32diab_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|derivedSigs|PPC32diab_SMP" value="*.a"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|flags|PPC32diab_SMP" value="crus"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|nonDbgFlags|PPC32diab_SMP" value=""/>
+            <booleanAttribute key="BLD::Info|Tool|Librarian|object" value="false"/>
+            <booleanAttribute key="BLD::Info|Tool|Librarian|passAble" value="true"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|sigs" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Linker|cmd|PPC32diab_SMP" value="echo &quot;building $@&quot;;rm -f %OutFile%;ddump -Ng %Objects% | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c ppc -tags $(VSB_DIR)/tags/ppc/PPC32/common/dkm.tags &gt; $(OBJ_DIR)/ctdt.c;%ccompilerprefix% $(TOOL_PATH)dcc %DebugModeFlags% $(CC_ARCH_SPEC) -Xdollar-in-ident -ei1518,4177,4223,4301,4550,5409,1606 -ei4193,4826,4381,4237,1573,4007,4082,4177,4223,4260,4550,5361,5828,2273,5387,5388 -ei1522,4092,4111,4152,4167,4171,4174,4186,4188,4191,4192,4223,4231,4236,4284,4375,4494,4513,5152,5457 -Xforce-declarations  $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES)  %Defines% $(DEFINES) -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c;%linkerprefix% $(TOOL_PATH)dld -tPPCFH:vxworks69 -X -r5 %ToolFlags% -o %OutFile% $(OBJ_DIR)/ctdt.o %Objects% %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|dbgFlags|PPC32diab_SMP" value="-g"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|derivedSigs|PPC32diab_SMP" value="*.out"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|flags|PPC32diab_SMP" value="-r4"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|nonDbgFlags|PPC32diab_SMP" value=" -XO -Xsize-opt "/>
+            <booleanAttribute key="BLD::Info|Tool|Linker|object" value="false"/>
+            <booleanAttribute key="BLD::Info|Tool|Linker|passAble" value="false"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|sigs" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|cmd|PPC32diab_SMP" value="echo &quot;building $@&quot;;%linkerprefix% $(TOOL_PATH)dld -tPPCFH:vxworks69 -X -r5 %ToolFlags% -o %OutFile% %Objects% $(ADDED_OBJECTS) %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|dbgFlags|PPC32diab_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|derivedSigs|PPC32diab_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|flags|PPC32diab_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|nonDbgFlags|PPC32diab_SMP" value=""/>
+            <booleanAttribute key="BLD::Info|Tool|Partial Image Linker|object" value="false"/>
+            <booleanAttribute key="BLD::Info|Tool|Partial Image Linker|passAble" value="true"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|sigs" value=""/>
+            <stringAttribute key="BLD::Info|cmd" value="%makeprefix% make --no-print-directory"/>
+            <stringAttribute key="BLD::Info|defaultSpec" value="PPC32diab_SMP"/>
+            <stringAttribute key="BLD::Info|redirDir|PPC32diab_SMP" value="PPC32diab_SMP"/>
+            <stringAttribute key="BLD::Info|redirRoot" value=""/>
+            <listAttribute key="BLD::Info|specs">
+                <stringAttribute value="PPC32diab_SMP"/>
+            </listAttribute>
+            <intAttribute key="BuildSupportEnabled" value="1"/>
+            <booleanAttribute key="BuildTargetCentric" value="true"/>
+        </mapAttribute>
+    </attributes>
+    <buildtargets>
+        <buildtarget buildtool="Linker" name="cps11_v4_PLC" passed="false" targetname="cps11_v4_PLC">
+            <contents>
+                <folder name="/cps11_v4_PLC" recursive="true"/>
+            </contents>
+        </buildtarget>
+    </buildtargets>
+</wrxml>
